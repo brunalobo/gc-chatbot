@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão do Conhecimento - OceanPact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/chatbot.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="assets/img/logo_branca.png" alt="OceanPact">
+            </div>
+            <h1 class="header-title">Gestão do Conhecimento</h1>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="chat-container">
+            <h1 class="welcome-title">Como posso ajudar?</h1>
+
+            <div class="chat-messages" id="chatMessages">
+                <!-- Messages will be inserted here -->
+            </div>
+
+            <div class="input-container">
+                <textarea id="userInput" class="chat-input" placeholder="Pergunte alguma coisa" rows="3"></textarea>
+                <button id="sendBtn" class="send-button" aria-label="Enviar mensagem">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 19V5M5 12l7-7 7 7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/chat.js"></script>
+</body>
+
+</html>
