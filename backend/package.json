@@ -1,7 +1,7 @@
 {
   "name": "gc-chatbot-backend",
   "version": "1.0.0",
-  "description": "Backend for Gestão do Conhecimento Chatbot with Azure AI",
+  "description": "Backend Gestão do Conhecimento",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

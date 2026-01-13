@@ -4,34 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestão do Conhecimento - OceanPact</title>
+    <title>Gestão do Conhecimento</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/chatbot.css">
+    <link rel="stylesheet" href="frontend/assets/css/style.css">
+    <link rel="stylesheet" href="frontend/assets/css/chatbot.css">
 </head>
 
 <body>
     <header class="header">
         <div class="header-content">
             <div class="logo">
-                <img src="assets/img/logo_branca.png" alt="OceanPact">
+                <img src="frontend/assets/img/logo_branca.png" alt="OceanPact">
             </div>
             <h1 class="header-title">Gestão do Conhecimento</h1>
         </div>
     </header>
 
-    <main class="main-content">
-        <div class="chat-container">
-            <h1 class="welcome-title">Como posso ajudar?</h1>
+    <main>
+        <div class="main-content">
+            <div class="chat-container">
+                <div class="welcome-wrapper" id="welcomeWrapper">
+                    <h1 class="welcome-title" id="welcomeTitle">Como posso ajudar?</h1>
+                </div>
 
-            <div class="chat-messages" id="chatMessages">
-                <!-- Messages will be inserted here -->
+                <div class="chat-wrapper" id="chatWrapper">
+                    <div class="chat-messages" id="chatMessages">
+                        <!-- Messages will be inserted here -->
+                    </div>
+                </div>
             </div>
 
-            <div class="input-container">
+            <div class="input-container" id="inputContainer">
                 <textarea id="userInput" class="chat-input" placeholder="Pergunte alguma coisa" rows="3"></textarea>
                 <button id="sendBtn" class="send-button" aria-label="Enviar mensagem">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
@@ -43,7 +49,7 @@
         </div>
     </main>
 
-    <script src="assets/js/chat.js"></script>
+    <script src="frontend/assets/js/chat.js"></script>
 </body>
 
 </html>
