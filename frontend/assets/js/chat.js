@@ -11,6 +11,37 @@ const chatContainer = document.querySelector('.chat-container');
 const mainContent = document.querySelector('.main-content');
 const inputContainer = document.querySelector('.input-container');
 
+// Sidebar Elements
+const sidebar = document.getElementById('sidebar');
+const menuTrigger = document.getElementById('menuTrigger');
+const collapseBtn = document.getElementById('collapseBtn');
+const headerLogo = document.querySelector('.header .logo');
+
+// Sidebar State
+let sidebarLocked = false;
+
+function openSidebar() {
+    sidebar.classList.add('open');
+    headerLogo.classList.add('hidden');
+    sidebarLocked = true;
+}
+
+function closeSidebar() {
+    sidebar.classList.remove('open');
+    headerLogo.classList.remove('hidden');
+    sidebarLocked = false;
+}
+
+menuTrigger.addEventListener('mouseenter', () => {
+    if (!sidebarLocked) {
+        openSidebar();
+    }
+});
+
+collapseBtn.addEventListener('click', () => {
+    closeSidebar();
+});
+
 // Session ID for conversation history
 const sessionId = 'session_' + Date.now();
 
